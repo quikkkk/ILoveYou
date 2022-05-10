@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap");
+body {
+  background: #111;
+  font-family: "Swanky and Moo Moo", cursive;
+  overflow-y: hidden;
+}
+
+.area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-size: 6.5em;
+  color: #fff;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur 0.75s ease-out infinite;
+  text-shadow: 0 0 5px #fff, 0 0 7px #fff;
+}
+.area canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  mix-blend-mode: color-dodge;
+}
+.area h2 {
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+}
+.area h2::after {
+  content: "";
+  animation: changeText 2s linear infinite;
+}
+
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff, 0px 0px 50px #7B96B8, 0px 0px 150px #7B96B8, 0px 10px 100px #7B96B8, 0px 10px 100px #7B96B8, 0px 10px 100px #7B96B8, 0px 10px 100px #7B96B8, 0px -10px 100px #7B96B8, 0px -10px 100px #7B96B8;
+  }
+}
+@keyframes changeText {
+  0% {
+    content: "test";
+  }
+  20% {
+    content: "test20%";
+  }
+  50% {
+    content: "test50%";
+  }
+  100% {
+    content: "test100%";
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
