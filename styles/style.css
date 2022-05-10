@@ -16,7 +16,7 @@ body {
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
-  animation: blur 0.15s ease-out infinite;
+  animation: blur 2s ease-out infinite;
   text-shadow: 0 0 5px #fff, 0 0 7px rgba(255, 0, 0, 0.432);
 }
 .area canvas {
