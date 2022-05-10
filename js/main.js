@@ -9,7 +9,7 @@ const options = {
  direction: 131,
  float: 0.25,
  glow: 1,
- imageUrl: ["./../upload/heart.svg", "./../upload/heart-3.svg" ],
+ imageUrl: ["./upload/heart.svg", "./upload/heart-3.svg" ],
  maxAlpha: 2,
  maxSize: 22,
  minAlpha: -0.2,
