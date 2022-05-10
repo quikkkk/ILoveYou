@@ -17,7 +17,7 @@ body {
  letter-spacing: -7px;
  font-weight: 700;
  text-transform: uppercase;
- animation: blur .75s ease-out infinite;
+ animation: blur .15s ease-out infinite;
  text-shadow: 0 0 5px #fff, 0 0 7px #fff;
 
  canvas {
@@ -34,9 +34,13 @@ body {
   z-index: 2;
   text-transform: uppercase;
 
+  @media (max-width: 860px) {
+   font-size: 20px;
+  }
+
   &::after {
    content: '';
-   animation: changeText 2s linear infinite;
+   animation: changeText .1000s ease-out infinite;
   }
  }
 }
@@ -65,8 +69,8 @@ body {
 }
 
 @keyframes changeText {
- 0% { content: 'test' }
- 20% { content: 'test20%' }
- 50% { content: 'test50%' }
- 100% { content: 'test100%' }
+ 0% { content: 'я' }
+ 20% { content: 'тебя' }
+ 50% { content: 'люблю' }
+ 100% { content: 'моя мамочка ❤️' }
 }
