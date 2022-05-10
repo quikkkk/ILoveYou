@@ -14,7 +14,6 @@ body {
  text-align: center;
  font-size: 6.5em;
  color: #fff;
- letter-spacing: -7px;
  font-weight: 700;
  text-transform: uppercase;
  animation: blur .15s ease-out infinite;
@@ -36,11 +35,12 @@ body {
 
   @media (max-width: 860px) {
    font-size: 20px;
+   width: 100%;
   }
 
   &::after {
    content: '';
-   animation: changeText .1000s ease-out infinite;
+   animation: changeText 2s ease-out infinite;
   }
  }
 }
@@ -70,7 +70,7 @@ body {
 
 @keyframes changeText {
  0% { content: 'я' }
- 20% { content: 'тебя' }
- 50% { content: 'люблю' }
+ 50% { content: 'тебя' }
+ 70% { content: 'люблю' }
  100% { content: 'моя мамочка ❤️' }
 }

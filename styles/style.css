@@ -14,7 +14,6 @@ body {
   text-align: center;
   font-size: 6.5em;
   color: #fff;
-  letter-spacing: -7px;
   font-weight: 700;
   text-transform: uppercase;
   animation: blur 0.15s ease-out infinite;
@@ -36,11 +35,12 @@ body {
 @media (max-width: 860px) {
   .area h2 {
     font-size: 20px;
+    width: 100%;
   }
 }
 .area h2::after {
   content: "";
-  animation: changeText 0.1s ease-out infinite;
+  animation: changeText 2s ease-out infinite;
 }
 
 @keyframes blur {
@@ -52,10 +52,10 @@ body {
   0% {
     content: "я";
   }
-  20% {
+  50% {
     content: "тебя";
   }
-  50% {
+  70% {
     content: "люблю";
   }
   100% {
